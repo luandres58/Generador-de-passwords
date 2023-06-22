@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Generador de Contraseña</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <title>Generador de Contraseñas</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,33 +63,35 @@
     </script>
 </head>
 <body>
-    <h1>Generador de Contraseña</h1>
+    <h1>¡Genera tu contraseña segura!</h1>
 
     <form id="passwordForm">
         <div>
-            <label for="wordField">Palabra (máximo 6 letras):</label>
+            <label for="wordField">Introduce una palabra (máximo 6 letras):</label>
             <input type="text" id="wordField" maxlength="6" required>
         </div>
 
         <div>
-            <label for="numberField">Número (máximo 4 dígitos):</label>
+            <label for="numberField">Introduce un número (máximo 4 dígitos):</label>
             <input type="text" id="numberField" maxlength="4" pattern="[0-9]{1,4}" required>
         </div>
 
         <button type="button" onclick="generarContrasena()">Generar Contraseña</button>
 
         <div>
-            <label for="passwordField">Contraseña Generada:</label>
+            <label for="passwordField">¡Aquí está tu contraseña segura!</label>
             <input type="text" id="passwordField" readonly>
         </div>
 
         <div>
-            <label for="emailField">Tu dirección de correo:</label>
+            <label for="emailField">¿Quieres enviarte tu contraseña por correo?</label>
             <input type="email" id="emailField" required>
         </div>
 
         <button type="button" onclick="enviarCorreo()">Enviar por correo</button>
     </form>
+    <meta http-equiv="Content-Security-Policy"
+content="script-src 'self' https://apis.google.com">
 </body>
 </html>
 # Generador-de-passwords
