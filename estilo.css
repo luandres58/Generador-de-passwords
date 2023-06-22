@@ -1,0 +1,62 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-image: url('fondo.jpg'); /* Ruta de la imagen de fondo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff3f3; /* Color del texto */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px; /* Tamaño de fuente más grande */
+    color: #ffffff; /* Color de fuente blanco grisáceo */
+}
+
+form {
+    max-width: 400px;
+    margin: 60px auto; /* Espacio entre el encabezado y el formulario */
+    padding: 20px;
+    background-color: rgba(15, 156, 142, 0.7); /* Color de fondo azulito verdoso */
+    border: 1px solid #029b65; /* Borde azul eléctrico */
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    text-align: center; /* Alinear el texto a la izquierda */
+    margin-bottom: 20px; /* Espacio vertical entre los elementos del formulario */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: calc(100% - 50px); /* Acortar el ancho de los campos de texto */
+    padding: 8px;
+    margin-bottom: 15px; /* Espacio vertical entre los elementos del formulario */
+    margin-left: 10px; /* Margen izquierdo */
+    border: 1px solid #029f75; /* Borde azul eléctrico */
+    border-radius: 3px;
+}
+
+button {
+   /* background-color: #00872f; /* Color de fondo azul eléctrico */
+    background-color: rgba(4, 122, 44, 0.9); /* Color de fondo azulito verdoso */
+
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 auto; /* Centro del botón en el formulario */
+    display: block; /* Convertir el botón en un bloque para aplicar el margen automático */
+    margin-bottom: 15px; 
+}
+
+button:hover {
+    background-color: #1a53ff; /* Color de fondo azul eléctrico más oscuro al pasar el cursor */
+}
+
+input[readonly] {
+    background-color: #eee;
+}
+# Generador-de-passwords
